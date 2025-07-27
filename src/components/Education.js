@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Education = () => {
   const education = [
@@ -7,7 +7,6 @@ const Education = () => {
       degree: 'Master of Computer Information Systems',
       school: 'Florida Institute of Technology',
       location: 'Melbourne, FL',
-      duration: '2023 - 2025',
       gpa: '3.9/4.0',
       description: 'Advanced studies in computer information systems with focus on enterprise solutions and modern technologies.',
       courses: ['Java', 'Data Structures', 'Database Systems', 'Computer Networks', 'Capstone Project']
@@ -16,7 +15,6 @@ const Education = () => {
       degree: 'Bachelor of Technology in Artificial Intelligence',
       school: 'Vidya Jyothi Institute of Technology',
       location: 'Hyderabad, India',
-      duration: '2019 - 2023',
       gpa: '3.7/4.0',
       description: 'Comprehensive foundation in artificial intelligence and machine learning technologies.',
       courses: ['Artificial Intelligence', 'Machine Learning', 'IOT', 'Data Science', 'NLP', 'Robotics', 'Computer Vision']
@@ -46,9 +44,6 @@ const Education = () => {
                     <h4>{edu.degree}</h4>
                     <h5>{edu.school}</h5>
                     <div className="education-meta">
-                      <span className="duration">
-                        <FaCalendarAlt /> {edu.duration}
-                      </span>
                       <span className="location">
                         <FaMapMarkerAlt /> {edu.location}
                       </span>
