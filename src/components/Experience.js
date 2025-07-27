@@ -44,6 +44,20 @@ const Experience = () => {
         'Deployed the application suite across AWS services including EC2, RDS, S3 for storage, and Lambda for automated report generation, ensuring high availability and scalability.'
       ],
       technologies: ['Java', 'Spring Framework', 'React.js', 'Python', 'TensorFlow', 'AWS', 'Oracle Database', 'MongoDB', 'Redis']
+    },
+    {
+      title: 'Software Developer',
+      company: 'The New India Assurance Company Limited',
+      location: 'India',
+      duration: 'Jun 2019 - Aug 2021',
+      description: [
+        'Developed a responsive online insurance platform using Java 8, Spring MVC/Security, and React.js, implementing core Java concepts like multithreading to optimize performance.',
+        'Engineered an intelligent underwriting automation system using machine learning and a real-time fraud detection model, deploying them on AWS and storing results in DynamoDB.',
+        'Designed and developed RESTful web services for seamless data exchange between front-end and back-end systems, implementing Redis caching to improve performance for frequently accessed policy data.',
+        'Managed database architecture using Hibernate/JPA with an Oracle Database, integrated MongoDB for policy document storage, and created automated PL/SQL reports using AWS Lambda.',
+        'Leveraged AWS services (S3, CloudWatch, SNS) for storage, monitoring, and notifications within an Agile framework that utilized CI/CD for continuous, reliable deployments.'
+      ],
+      technologies: ['Java', 'Spring MVC', 'React.js', 'Machine Learning', 'Amazon Web Services (AWS)', 'Oracle Database', 'MongoDB', 'Redis']
     }
   ];
 
