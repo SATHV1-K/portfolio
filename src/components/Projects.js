@@ -28,8 +28,8 @@ const Projects = () => {
     <section className="projects" id="projects">
       <div className="container">
         <div className="section-header">
-          <h2>My Projects</h2>
-          <p className="section-subtitle">Some of my recent work</p>
+          <h2>Side Projects</h2>
+          <p className="section-subtitle">Few side projects of mine</p>
         </div>
         
         <div className="projects-grid">
