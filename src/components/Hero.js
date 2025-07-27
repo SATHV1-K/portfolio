@@ -27,7 +27,7 @@ const Hero = () => {
                 Download Resume
               </button>
               <a 
-                href="https://sathv1-k.github.io/portfolio/" 
+                href="https://sathv1-k.github.io/terminalportfolio/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
