@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: 'Full-Stack File Storage Application',
       description: 'A comprehensive file storage and management system with secure user authentication, file upload/download capabilities, and real-time file sharing. Built with modern full-stack technologies.',
-      image: '/FileDrop.png',
+      image: './FileDrop.png',
       technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
       icons: ['⚛️', '💻', '🗄️', '🔒'],
       github: 'https://github.com/SATHV1-K/Full-Stack-File-Storage-Application',
@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: 'Movie Database App',
       description: 'A dynamic movie database application featuring movie search, detailed information display, ratings, and user reviews. Integrated with external movie APIs for comprehensive movie data.',
-      image: '/MovieDatabase.png',
+      image: './MovieDatabase.png',
       technologies: ['React', 'JavaScript', 'API Integration', 'CSS3', 'HTML5'],
       icons: ['⚛️', '🎬', '🔍', '⭐'],
       github: 'https://github.com/SATHV1-K/movie-database-app',

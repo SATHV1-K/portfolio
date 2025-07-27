@@ -4,7 +4,7 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Resume Sath Jasti.pdf';
+    link.href = './Resume Sath Jasti.pdf';
     link.download = 'Resume Sath Jasti.pdf';
     document.body.appendChild(link);
     link.click();
@@ -45,7 +45,7 @@ const Hero = () => {
               muted 
               playsInline
             >
-              <source src="/GIF.mp4" type="video/mp4" />
+              <source src="./GIF.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
