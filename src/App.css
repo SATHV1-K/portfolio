@@ -1206,6 +1206,18 @@ h3, h4, h5, h6 {
   display: block;
 }
 
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  backdrop-filter: blur(2px);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav {
@@ -1217,6 +1229,7 @@ h3, h4, h5, h6 {
     box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
     transition: top 0.3s ease;
     padding: 2rem;
+    z-index: 1001;
   }
   
   .nav.nav-open {
@@ -1230,6 +1243,7 @@ h3, h4, h5, h6 {
   
   .mobile-menu-toggle {
     display: flex;
+    z-index: 1002;
   }
   
   .hero-content {

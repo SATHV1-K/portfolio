@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navRef = useRef(null);
+  const toggleRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +15,26 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && 
+          navRef.current && 
+          !navRef.current.contains(event.target) &&
+          toggleRef.current &&
+          !toggleRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -22,13 +44,20 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="container">
-        <div className="logo">
-          <h2 onClick={() => scrollToSection('hero')} style={{cursor: 'pointer'}}>SJ</h2>
-        </div>
+    <>
+      {isMobileMenuOpen && (
+        <div 
+          className="mobile-menu-overlay" 
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+      <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="container">
+          <div className="logo">
+            <h2 onClick={() => scrollToSection('hero')} style={{cursor: 'pointer'}}>SJ</h2>
+          </div>
         
-        <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
+        <nav ref={navRef} className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
           <ul>
             <li><button onClick={() => scrollToSection('about')}>About</button></li>
             <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
@@ -40,6 +69,7 @@ const Header = () => {
         </nav>
         
         <button 
+          ref={toggleRef}
           className="mobile-menu-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -47,8 +77,9 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
-      </div>
-    </header>
+        </div>
+      </header>
+    </>
   );
 };
 
