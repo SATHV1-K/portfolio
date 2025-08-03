@@ -26,12 +26,31 @@ const Header = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside);
+    const handleTouchEnd = (event) => {
+      if (isMobileMenuOpen && 
+          navRef.current && 
+          !navRef.current.contains(event.target) &&
+          toggleRef.current &&
+          !toggleRef.current.contains(event.target)) {
+        event.preventDefault();
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
+      document.addEventListener('touchend', handleTouchEnd);
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = 'hidden';
+    }
     
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('touchstart', handleClickOutside);
+      document.removeEventListener('touchend', handleTouchEnd);
+      // Restore body scroll
+      document.body.style.overflow = 'unset';
     };
   }, [isMobileMenuOpen]);
 

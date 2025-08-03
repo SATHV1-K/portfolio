@@ -1216,6 +1216,10 @@ h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   backdrop-filter: blur(2px);
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* Responsive Design */
@@ -1230,10 +1234,31 @@ h3, h4, h5, h6 {
     transition: top 0.3s ease;
     padding: 2rem;
     z-index: 1001;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
   }
   
   .nav.nav-open {
     top: 80px;
+  }
+  
+  .nav ul li button {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    color: #333;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    touch-action: manipulation;
+  }
+  
+  .nav ul li button:hover,
+  .nav ul li button:active {
+    background-color: #f8f9fa;
   }
   
   .nav ul {
