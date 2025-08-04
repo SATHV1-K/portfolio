@@ -103,6 +103,8 @@ h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1002;
 }
 
 .logo h2 {

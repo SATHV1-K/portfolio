@@ -67,7 +67,14 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div 
           className="mobile-menu-overlay" 
-          onClick={() => setIsMobileMenuOpen(false)}
+          onClick={(e) => {
+            // Don't close if clicking on toggle button area
+            if (toggleRef.current && toggleRef.current.contains(e.target)) {
+              return;
+            }
+            console.log('Overlay clicked, closing menu');
+            setIsMobileMenuOpen(false);
+          }}
         />
       )}
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
@@ -90,7 +97,16 @@ const Header = () => {
         <button 
           ref={toggleRef}
           className="mobile-menu-toggle"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Toggle clicked, current state:', isMobileMenuOpen);
+            setIsMobileMenuOpen(!isMobileMenuOpen);
+          }}
+          style={{
+            pointerEvents: 'auto',
+            zIndex: 9999
+          }}
         >
           <span></span>
           <span></span>
