@@ -8,7 +8,7 @@ const Footer = () => {
     {
       icon: <FaLinkedin />,
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/sathvikjasti'
+      url: 'https://www.linkedin.com/in/sathvikj/'
     },
     {
       icon: <FaGithub />,
@@ -18,7 +18,7 @@ const Footer = () => {
     {
       icon: <FaEnvelope />,
       name: 'Email',
-      url: 'mailto:sath.jasti@gmail.com'
+      url: 'mailto:sathvikjasti27@gmail.com'
     }
   ];
 
@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-info">
             <h3>Sathvik Jasti</h3>
-            <p>Full Stack Developer & AI Enthusiast</p>
+            <p>Software Developer</p>
           </div>
           
           <div className="footer-links">
@@ -51,7 +51,7 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <p>
-            © {currentYear} Sathvik Jasti. Made with <FaHeart className="heart-icon" /> using React.
+            © {currentYear} Sathvik Jasti. Made with React.
           </p>
         </div>
       </div>

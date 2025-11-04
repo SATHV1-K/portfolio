@@ -12,33 +12,27 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I am a Full-Stack Java Developer with over six years of experience, I specialize in building robust, enterprise-grade applications from end to end. My expertise is rooted in Java 17 and the Spring ecosystem (including Spring Boot, MVC, and Security), where I design and implement scalable microservices and RESTful APIs documented with Swagger.
-            </p>
-            <p>
-              On the front end, I create responsive and modern user interfaces using React.js and Redux. A key focus of my work involves integrating AI/ML models to drive business outcomes, leveraging AWS services like SageMaker, Lambda, EC2, and S3. I am proficient with a variety of data solutions, from SQL databases like Oracle and MySQL to NoSQL alternatives such as MongoDB and DynamoDB, and I utilize Apache Kafka and Redis for real-time data processing.
-            </p>
-            <p>
-              My entire workflow is grounded in modern DevOps practices, including Docker containerization and building CI/CD pipelines for efficient, automated deployments.
+              Software Developer with 2+ years of experience in Java full-stack development, specializing in Spring Boot, Hibernate, and React.js. Proficient in building scalable applications with frontend frameworks and backend APIs, while integrating AI components such as LLMs for natural language processing and RAG systems for secure data retrieval. Experienced in managing CI/CD pipelines using Jenkins, Git, and Maven, with hands-on work in messaging systems (Kafka), Oracle/PostgreSQL databases, MongoDB, and Agile practices. Self-motivated team player with strong collaboration skills across global teams, passionate about delivering reliable, AI-enhanced solutions in fast-paced environments.
             </p>
             
             <div className="about-stats">
               <div className="stat">
-                <h3>6+</h3>
+                <h3>2+</h3>
                 <p>Years Experience</p>
               </div>
               <div className="stat">
-                <h3>2+</h3>
+                <h3>1+</h3>
                 <p>Years of AI/ML</p>
               </div>
               <div className="stat">
-                <h3>10+</h3>
+                <h3>15+</h3>
                 <p>Technologies Mastered</p>
               </div>
             </div>
           </div>
           
           <div className="about-image">
-            <img src="./SathJasti_Image.jpg" alt="Sath Jasti" className="profile-image" />
+            <img src="./SathJasti_Image.jpg" alt="Sathvik Jasti" className="profile-image" />
           </div>
         </div>
       </div>

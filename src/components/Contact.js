@@ -7,14 +7,14 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      value: 'sath.jasti@gmail.com',
-      link: 'mailto:sath.jasti@gmail.com'
+      value: 'sathvikjasti27@gmail.com',
+      link: 'mailto:sathvikjasti27@gmail.com'
     },
     {
       icon: <FaPhone />,
       title: 'Phone',
-      value: '+1 (470) 290-3665',
-      link: 'tel:+14702903665'
+      value: '(470) 871-5249',
+      link: 'tel:+14708715249'
     }
   ];
 
@@ -22,7 +22,7 @@ const Contact = () => {
     {
       icon: <FaLinkedin />,
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/sathvikjasti'
+      url: 'https://www.linkedin.com/in/sathvikj/'
     },
     {
       icon: <FaGithub />,
@@ -92,14 +92,14 @@ const Contact = () => {
             </div>
             <div className="map-embed">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.48129308136!2d-80.8081!3d28.0836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de0d394e5b1c5b%3A0x7b2b0b0b0b0b0b0b!2sMelbourne%2C%20FL!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.309!3d40.7489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2537b6a5b0b0b%3A0x7b2b0b0b0b0b0b0b!2sHarrison%2C%20NJ!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
                 width="100%"
                 height="400"
                 style={{border: 0}}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Melbourne, Florida Location"
+                title="Harrison, New Jersey Location"
               ></iframe>
             </div>
           </div>
