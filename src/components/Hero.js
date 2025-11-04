@@ -4,8 +4,8 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = './Resume Sath Jasti.pdf';
-    link.download = 'Resume Sath Jasti.pdf';
+    link.href = './Resume Sathvik Jasti.pdf';
+    link.download = 'Resume Sathvik Jasti.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
