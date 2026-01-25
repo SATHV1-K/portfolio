@@ -4,8 +4,8 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = './Resume Sathvik Jasti.pdf';
-    link.download = 'Resume Sathvik Jasti.pdf';
+    link.href = './Resume_Sathvik_Jasti_SWE.pdf';
+    link.download = 'Resume_Sathvik_Jasti_SWE.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -21,14 +21,14 @@ const Hero = () => {
             <p className="description">
               Java • Spring • React • AWS • Database • AI/ML
             </p>
-            
+
             <div className="hero-buttons">
               <button className="btn btn-primary" onClick={handleDownloadResume}>
                 Download Resume
               </button>
-              <a 
-                href="https://sathv1-k.github.io/terminalportfolio/" 
-                target="_blank" 
+              <a
+                href="https://sathv1-k.github.io/terminalportfolio/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
@@ -36,13 +36,13 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          
+
           <div className="hero-video-container">
-            <video 
+            <video
               className="hero-video"
-              autoPlay 
-              loop 
-              muted 
+              autoPlay
+              loop
+              muted
               playsInline
             >
               <source src="./GIF.mp4" type="video/mp4" />
@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="shapes">
         <div className="shape shape-1"></div>
         <div className="shape shape-2"></div>
