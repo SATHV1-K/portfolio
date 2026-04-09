@@ -4,45 +4,58 @@ import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Software Developer',
-      company: 'Orbit Analytics',
-      location: 'New York, NY',
-      duration: 'May 2024 - Present',
+      title: 'AI/ML Platform Engineer',
+      company: 'Reliance Surfaces',
+      location: 'USA',
+      duration: 'Feb 2026 – Present',
       description: [
-        'Engineered REST APIs using Java Spring Boot that integrated Hugging Face LLMs to enable AI driven data summarization and natural language query processing, reducing average API response time by 30% and improving user query accuracy.',
-        'Developed data processing scripts in python to automate data extraction and transformation, reducing manual effort by 30% and improving data accuracy for stakeholder reporting.',
-        'Collaborated with UI/UX designers to refine React components, ensuring adherence to accessibility standards and improving usability scores.',
-        'Deployed machine learning models on AWS Sagemaker using PyTorch, streamlining the model training process and reducing deployment time by 50%.',
-        'Implemented Docker containers for model deployment, ensuring consistent environments across development and production, which improved deployment reliability and reduced rollback incidents by 70%.'
+        'Architected AI-integrated platform features by incorporating LLM API endpoints and intelligent content generation pipelines using OpenAI APIs, enabling automated surface material recommendations that reduced manual product consultation time.',
+        'Designed ML-informed backend services using Python and Node.js, processing structured and unstructured product catalog data to power predictive analytics dashboards delivering real-time business insights.',
+        'Built automated data ingestion workflows leveraging AWS Lambda and S3, enabling real-time feature extraction from product catalogs for downstream ML model consumption.',
+        'Implemented intelligent product search modules using vector similarity matching with Pinecone, improving customer product discovery accuracy by ~25%.'
       ],
-      technologies: ['Java', 'Spring Boot', 'Hugging Face LLMs', 'React.js', 'Python', 'AWS Sagemaker', 'PyTorch', 'Docker']
+      technologies: ['Python', 'Node.js', 'OpenAI APIs', 'LangChain', 'Pinecone', 'AWS Lambda', 'AWS S3', 'AWS EC2', 'React.js', 'PostgreSQL', 'Docker', 'Git']
     },
     {
-      title: 'Research Assistant',
+      title: 'AI Backend Engineer',
+      company: 'Antra, Inc.',
+      location: 'Sterling, VA, USA',
+      duration: 'Jul 2025 – Feb 2026',
+      description: [
+        'Engineered scalable backend infrastructure using Java (Spring Boot) and Python to support real-time model inference endpoints, serving enterprise AI features across multiple microservices.',
+        'Designed and optimized PostgreSQL/MySQL schemas structured as ML feature stores, enabling efficient data retrieval for model training pipelines and reducing query latency by 30%.',
+        'Implemented Redis-based caching for model prediction results and high-frequency reads, improving response times by 30% and supporting 99.9% uptime SLA.',
+        'Architected secure RESTful APIs for data exchange between ML microservices and external vendor platforms, ensuring reliable integration with production AI workflows.',
+        'Managed AWS (EC2, S3) deployment and monitoring with automated health checks and scaling policies for AI serving workloads.'
+      ],
+      technologies: ['Java', 'Spring Boot', 'Python', 'PostgreSQL', 'MySQL', 'Redis', 'AWS EC2', 'AWS S3', 'React.js', 'Docker', 'Git', 'CI/CD']
+    },
+    {
+      title: 'ML Research Assistant',
       company: 'Florida Institute of Technology',
-      location: 'Melbourne, FL',
-      duration: 'Aug 2023 - May 2024',
+      location: 'Melbourne, FL, USA',
+      duration: 'Aug 2023 – May 2025',
       description: [
-        'Developed innovative full stack applications with React.js and Node.js, incorporating AI features via RAG + LLMs to make NASA standards interactive and queryable, boosting research productivity by 25%.',
-        'Maintained software through unit testing, debugging, and documentation, troubleshooting access issues to ensure seamless integration with Google Cloud SQL.',
-        'Participated in SDLC phases from analysis to support, collaborating with teams using Agile methodologies and Git for source control.',
-        'Streamlined deployment pipelines by containerizing services with Docker and automating on Google Cloud Run, while documenting architectural decisions for knowledge sharing.'
+        'Developed and deployed a custom AI chatbot using Node.js and OpenAI LLM APIs, integrating NLU with automated calendar scheduling based on real-time availability, saving the lead professor 5+ hours/week of manual coordination.',
+        'Served as lead developer building a centralized platform managing high-impact publications, faculty projects, and digital asset libraries with optimized content retrieval.',
+        'Built a custom CMS module with advanced image compression and lazy loading, reducing page load times by 40% for large-scale research image portfolios.',
+        'Acted as sole technical point of contact, translating academic requirements into production features and delivering comprehensive system documentation for future scalability.'
       ],
-      technologies: ['React.js', 'Node.js', 'RAG', 'LLMs', 'Google Cloud Platform', 'Google Cloud SQL', 'Docker', 'Git']
+      technologies: ['Node.js', 'OpenAI APIs', 'React.js', 'JavaScript', 'Python', 'AWS S3', 'MongoDB', 'Git']
     },
     {
-      title: 'Contract: Solar Data Automation Project',
-      company: 'Infinite Photon Energy',
-      location: 'Texas, USA',
-      duration: 'Contract Role',
+      title: 'ML Engineer',
+      company: 'Orbit Analytics',
+      location: 'India',
+      duration: 'Apr 2022 – Jun 2023',
       description: [
-        'Built an automated data pipeline to fetch, parse, and consolidate 15-minute solar energy and price data from ERCOT CSV/ZIP files and Photon facility APIs into Google Sheets.',
-        'Designed dual ETL workflows (historical full-load + incremental 15-minute updates) with deduplication logic, ensuring consistent and accurate reporting.',
-        'Integrated with ERCOT JSON APIs to download new market files and with Photon APIs to validate power and accumulated energy data across sources.',
-        'Implemented automated revenue calculations, converting technical energy readings into business-critical financial metrics for reporting and analysis.',
-        'Created daily completeness trackers (96 intervals/day & file-level monitoring) and optimized batch inserts to keep scripts within Google Apps Script execution limits.'
+        'Developed fraud detection and claims risk assessment models using Scikit-learn, CatBoost, and LightGBM, improving claims adjudication accuracy and supporting data-driven underwriting decisions.',
+        'Performed behavioral clustering and customer profiling using K-Means and hierarchical clustering, enabling personalized insurance offerings and contributing to improved customer retention.',
+        'Built claims volume and premium forecasting models using Prophet and SARIMA, enabling actuarial teams to enhance reserve planning and improve loss ratio projections.',
+        'Designed ETL pipelines using GCP Dataflow, BigQuery, and Cloud Storage, ensuring reliable ingestion and transformation of structured and semi-structured insurance datasets.',
+        'Created executive dashboards in Tableau, Power BI, and Plotly, delivering real-time insights on claims trends, risk metrics, and customer segments for actuaries and underwriters.'
       ],
-      technologies: ['Google Apps Script', 'Google Sheets API', 'ERCOT APIs', 'ETL', 'Data Pipeline', 'JavaScript', 'JSON', 'CSV Processing']
+      technologies: ['Python', 'Scikit-learn', 'CatBoost', 'LightGBM', 'Prophet', 'SARIMA', 'SQL', 'MongoDB', 'Snowflake', 'Tableau', 'Power BI', 'GCP BigQuery', 'GCP Dataflow']
     }
   ];
 

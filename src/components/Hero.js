@@ -4,8 +4,8 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = './Resume_Sathvik_Jasti_SWE.pdf';
-    link.download = 'Resume_Sathvik_Jasti_SWE.pdf';
+    link.href = './Sathvik_Jasti_Resume.pdf';
+    link.download = 'Sathvik_Jasti_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -17,9 +17,9 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="name">Hello, I'm Sathvik Jasti</h1>
-            <h2 className="role">a software developer</h2>
+            <h2 className="role">AI/ML Engineer</h2>
             <p className="description">
-              Java • Spring • React • AWS • Database • AI/ML
+              Python • LLMs • RAG • LangChain • AWS • React • Spring Boot
             </p>
 
             <div className="hero-buttons">

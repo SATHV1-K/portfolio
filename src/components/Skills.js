@@ -3,114 +3,109 @@ import React from 'react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Languages & Frameworks',
+      title: 'Programming Languages',
       skills: [
-        { name: 'Java (8-17)', icon: '☕' },
-        { name: 'J2EE (Servlets, JSP, JDBC)', icon: '☕' },
-        { name: 'Spring Framework', icon: '🍃' },
-        { name: 'Spring Boot', icon: '🍃' },
-        { name: 'Spring MVC', icon: '🍃' },
-        { name: 'Spring Data JPA', icon: '🍃' },
-        { name: 'Spring Security', icon: '🔒' },
-        { name: 'Apache Kafka', icon: '📡' },
-        { name: 'Hibernate ORM', icon: '🔧' },
         { name: 'Python', icon: '🐍' },
-        { name: 'JavaScript (ES6+)', icon: '🟨' },
+        { name: 'Java', icon: '☕' },
+        { name: 'JavaScript', icon: '🟨' },
         { name: 'TypeScript', icon: '🔷' },
-        { name: 'React.js', icon: '⚛️' },
-        { name: 'Node.js/Express', icon: '💚' },
-        { name: 'Redux', icon: '🔄' },
-        { name: 'Vite', icon: '⚡' }
+        { name: 'SQL', icon: '🗄️' }
       ]
     },
     {
-      title: 'Database Technologies',
+      title: 'AI/ML Libraries & Techniques',
       skills: [
-        { name: 'Oracle Database', icon: '🗄️' },
-        { name: 'Oracle SQL (Stored Procedures, Packages, Functions)', icon: '🗄️' },
-        { name: 'MySQL', icon: '🐬' },
+        { name: 'Scikit-learn', icon: '🔬' },
+        { name: 'XGBoost', icon: '🚀' },
+        { name: 'LightGBM', icon: '💡' },
+        { name: 'PyTorch', icon: '🔥' },
+        { name: 'TensorFlow', icon: '🧠' },
+        { name: 'CatBoost', icon: '🐱' },
+        { name: 'Predictive Modeling', icon: '📈' },
+        { name: 'Segmentation Modeling', icon: '🧩' },
+        { name: 'Classification & Clustering', icon: '📊' },
+        { name: 'Feature Engineering', icon: '⚙️' }
+      ]
+    },
+    {
+      title: 'NLP / LLMs',
+      skills: [
+        { name: 'OpenAI APIs (GPT)', icon: '🤖' },
+        { name: 'Hugging Face Transformers', icon: '🤗' },
+        { name: 'LangChain', icon: '🔗' },
+        { name: 'RAG', icon: '📚' },
+        { name: 'BERT', icon: '🧠' },
+        { name: 'Pinecone', icon: '🌲' },
+        { name: 'Milvus', icon: '🔢' },
+        { name: 'Faiss', icon: '🔢' },
+        { name: 'Chroma', icon: '🎨' },
+        { name: 'Chain-of-Thought Prompting', icon: '💭' },
+        { name: 'Few-shot Prompting', icon: '🎯' },
+        { name: 'Prompt Guardrails', icon: '🛡️' }
+      ]
+    },
+    {
+      title: 'MLOps & Automation',
+      skills: [
+        { name: 'MLflow', icon: '📦' },
+        { name: 'Docker', icon: '🐳' },
+        { name: 'FastAPI', icon: '⚡' },
+        { name: 'Apache Airflow', icon: '🌬️' },
+        { name: 'CI/CD (GitHub Actions)', icon: '🔄' },
+        { name: 'SHAP', icon: '📊' },
+        { name: 'LIME', icon: '🍋' },
+        { name: 'RAGAS Metrics', icon: '📏' },
+        { name: 'Prophet', icon: '🔮' },
+        { name: 'SARIMA / ARIMA', icon: '📉' }
+      ]
+    },
+    {
+      title: 'Cloud Platforms',
+      skills: [
+        { name: 'AWS EC2', icon: '☁️' },
+        { name: 'AWS S3', icon: '☁️' },
+        { name: 'AWS Lambda', icon: '⚡' },
+        { name: 'AWS SageMaker', icon: '🧪' },
+        { name: 'AWS Glue', icon: '🔧' },
+        { name: 'Azure App Service', icon: '☁️' },
+        { name: 'Azure SQL DB', icon: '🗄️' },
+        { name: 'Azure Functions', icon: '⚡' },
+        { name: 'GCP BigQuery', icon: '📊' },
+        { name: 'GCP Dataflow', icon: '🌊' },
+        { name: 'GCP Cloud Storage', icon: '☁️' }
+      ]
+    },
+    {
+      title: 'Databases & Data Stores',
+      skills: [
         { name: 'PostgreSQL', icon: '🐘' },
+        { name: 'MySQL', icon: '🐬' },
         { name: 'MongoDB', icon: '🍃' },
         { name: 'Redis', icon: '🔴' },
-        { name: 'AWS DynamoDB', icon: '⚡' },
-        { name: 'Google Cloud SQL', icon: '☁️' },
-        { name: 'Supabase', icon: '⚡' },
-        { name: 'Vector Database', icon: '🔢' }
+        { name: 'Snowflake', icon: '❄️' },
+        { name: 'Azure SQL Database', icon: '🗄️' }
       ]
     },
     {
-      title: 'Web Technologies',
+      title: 'Web Development',
       skills: [
+        { name: 'React.js', icon: '⚛️' },
+        { name: 'Node.js', icon: '💚' },
+        { name: 'Spring Boot', icon: '🍃' },
+        { name: 'FastAPI', icon: '⚡' },
+        { name: 'Flask', icon: '🧪' },
         { name: 'RESTful APIs', icon: '🌐' },
-        { name: 'Microservices Architecture', icon: '🔧' },
-        { name: 'Responsive Web Design', icon: '📱' },
-        { name: 'HTML5', icon: '🌐' },
-        { name: 'CSS3', icon: '🎨' },
-        { name: 'JSON', icon: '📄' },
-        { name: 'XML', icon: '📄' }
+        { name: 'Microservices', icon: '🔧' }
       ]
     },
     {
-      title: 'Cloud & DevOps',
+      title: 'Visualization & BI',
       skills: [
-        { name: 'AWS (EC2, S3, RDS, Lambda)', icon: '☁️' },
-        { name: 'Google Cloud Platform', icon: '☁️' },
-        { name: 'Cloud Run', icon: '☁️' },
-        { name: 'Cloud Functions', icon: '☁️' },
-        { name: 'Pub/Sub', icon: '📡' },
-        { name: 'Cloud Build', icon: '🔧' },
-        { name: 'Docker', icon: '🐳' },
-        { name: 'Jenkins', icon: '🔧' },
-        { name: 'CI/CD Pipelines', icon: '🔄' },
-        { name: 'Terraform', icon: '🏗️' },
-        { name: 'Git/GitHub', icon: '📝' },
-        { name: 'Maven', icon: '📦' },
-        { name: 'Railway', icon: '🚂' }
-      ]
-    },
-    {
-      title: 'AI/ML',
-      skills: [
-        { name: 'Hugging Face Transformers', icon: '🤗' },
-        { name: 'RAG Pipelines', icon: '🔗' },
-        { name: 'TF-IDF', icon: '📊' },
-        { name: 'BERT', icon: '🧠' },
-        { name: 'Scikit-learn', icon: '🔬' },
-        { name: 'Embeddings (Sentence Transformers)', icon: '🔢' },
-        { name: 'XG Boost', icon: '🚀' },
-        { name: 'Random Forest', icon: '🌲' }
-      ]
-    },
-    {
-      title: 'Development Practices',
-      skills: [
-        { name: 'SDLC (Agile/Scrum)', icon: '🔄' },
-        { name: 'Requirements Analysis', icon: '📋' },
-        { name: 'Software Design', icon: '🏗️' },
-        { name: 'Test-Driven Development', icon: '🧪' },
-        { name: 'JUnit', icon: '🧪' },
-        { name: 'Mockito', icon: '🎭' },
-        { name: 'Production Support', icon: '🔧' },
-        { name: 'Performance Optimization', icon: '⚡' },
-        { name: 'Stakeholder Management', icon: '👥' },
-        { name: 'Client Interfacing', icon: '🤝' }
-      ]
-    },
-    {
-      title: 'Tools',
-      skills: [
-        { name: 'JIRA', icon: '📋' },
-        { name: 'Postman', icon: '📮' },
-        { name: 'Swagger/OpenAPI', icon: '📖' },
-        { name: 'IntelliJ IDEA', icon: '💡' },
-        { name: 'Eclipse', icon: '🌙' },
-        { name: 'SQL Developer', icon: '🗄️' },
-        { name: 'Dialogflow CX', icon: '🤖' },
-        { name: 'Firebase', icon: '🔥' },
-        { name: 'Hugging Face Hub', icon: '🤗' },
-        { name: 'Square API', icon: '💳' },
-        { name: 'Resend', icon: '📧' },
-        { name: 'Twilio', icon: '📱' }
+        { name: 'Matplotlib', icon: '📊' },
+        { name: 'Seaborn', icon: '🌊' },
+        { name: 'Plotly', icon: '📈' },
+        { name: 'Power BI', icon: '📊' },
+        { name: 'Tableau', icon: '📉' }
       ]
     }
   ];
